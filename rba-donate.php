@@ -70,7 +70,7 @@ add_shortcode( 'donate', 'donate_form' );
     <title>RBA</title>
     </head>
     <body>
-      	<form id="payment" action="<?php echo $postActionUrl ?>" method="post"   >
+      	<form id="paymentsend" action="<?php echo $postActionUrl ?>" method="post"   >
   		   <p><input name="Version" type="hidden" value="1" >
   	     <p><input name="MerchantID" type="hidden" value="<?php echo $MerchantID ?>"  >
   	     <p><input name="TerminalID" type="hidden" value="<?php echo $TerminalID ?>"  >
@@ -85,7 +85,7 @@ add_shortcode( 'donate', 'donate_form' );
 
 	      </form>
 	       <script>
-            document.getElementById('ordersend').submit();
+            document.getElementById('paymentsend').submit();
          </script>
     </body>
     </html>
